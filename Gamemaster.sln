@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticipantView", "ParticipantView\ParticipantView.csproj", "{E385597A-FB1E-4DF1-82BC-3A61A7A913CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameMasterView", "GameMasterView\GameMasterView.csproj", "{E921EBA5-3A5F-41EE-AAB7-6CF6514DB313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{EA8CF313-DECB-4457-A6A7-0636D25691AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E385597A-FB1E-4DF1-82BC-3A61A7A913CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E385597A-FB1E-4DF1-82BC-3A61A7A913CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E385597A-FB1E-4DF1-82BC-3A61A7A913CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E385597A-FB1E-4DF1-82BC-3A61A7A913CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E921EBA5-3A5F-41EE-AAB7-6CF6514DB313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E921EBA5-3A5F-41EE-AAB7-6CF6514DB313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E921EBA5-3A5F-41EE-AAB7-6CF6514DB313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E921EBA5-3A5F-41EE-AAB7-6CF6514DB313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8CF313-DECB-4457-A6A7-0636D25691AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8CF313-DECB-4457-A6A7-0636D25691AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8CF313-DECB-4457-A6A7-0636D25691AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8CF313-DECB-4457-A6A7-0636D25691AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

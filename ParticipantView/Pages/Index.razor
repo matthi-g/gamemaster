@@ -1,0 +1,47 @@
+﻿@page "/"
+@inject Services.SignalRClient SignalRClient
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+
+<h3>Game Master View</h3>
+
+<button class="btn btn-primary" @onclick="Connect">Connect to SignalR</button>
+<button class="btn btn-primary" @onclick="SendTestMessage">Send Test Message</button>
+
+<ul>
+    @foreach (var message in messages)
+    {
+        <li>@message</li>
+    }
+</ul>
+
+@code {
+    private List<string> messages = new();
+
+    protected override void OnInitialized()
+    {
+        SignalRClient.OnMessageReceived += (user, message) =>
+        {
+            messages.Add($"{user}: {message}");
+            InvokeAsync(StateHasChanged);
+        };
+    }
+
+    private async Task Connect()
+    {
+        await SignalRClient.ConnectAsync();
+    }
+
+    private async Task SendTestMessage()
+    {
+        Console.WriteLine("Message sent!");
+        await SignalRClient.SendMessage("GameMaster", "Hello from Participant View!");
+    }
+}
